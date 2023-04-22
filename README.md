@@ -22,21 +22,22 @@ The main steps are:
 The program will generate the following output:
 1. deporvillage_bicicletas_date.json where date is the date of the download.
 This file contains all the information that has been scraped, the structure of the information might vary slightly depending on each bike but generally the strucutre is the following:
-+ identificador del producto (parte del URL) {
++ identificador del producto (product ID, part of the URL) {
 
-	+ Nombre Producto
-	+ Precio Original (sin descuento)
-	+ Precio Venta (con descuento)
-	+ Marca
-	+ Breadcrumb (listado de categorías)
+	+ Nombre Producto (product name)
+	+ Precio Original (original price with no discount)
+	+ Precio Venta (retail price with discount)
+	+ Marca (brand)
+	+ Breadcrumb (products category)
 	+ Tags
-	+ Estrellas
-	+ Descripción
-	A partir de aquí la información varia en función de la información disponible y puede contenter: Talla, Peso, Cuadro, Horquilla, Cambio, Manetas de cambio, Bielas y platos, Cassette, Cadena, Frenos, Neumáticos, Manillar, Potencia, Sillín, Tija, Pedales, etc.
-	+ Datetime (de la descarga de la información)
+	+ Estrellas (stars rating)
+	+ Descripción (description)
+	 From this point the information might vary slightly but generally contains: Talla, Peso, Cuadro, Horquilla, Cambio, Manetas de cambio, Bielas y platos, Cassette, Cadena, Frenos, Neumáticos, Manillar, Potencia, Sillín, Tija, Pedales, etc.
+	+ Datetime (of the scraping)
+
 }
-2. la carpeta /img con una subcarpeta por cada producto.
-El nombre de la subcarpeta es el identificador del producto y contiene las imagenes disponibles en la página.
+2. the /img directory, with a subdirectory for each product
+The name of the subdirectory is the product ID (idendificador del producto) and each folder contains the pictures available for each product.
 
 ## DOI en Zenodo
 
