@@ -6,9 +6,6 @@ from selenium.webdriver.common.by import By
 from datetime import datetime
 import shutil
 
-import json
-from datetime import date
-
 
 def get_pictures(url_list: list, search_key: str, height: int, width: int, quality: int, product_id: str,
                  folder_path: str, headers: str) -> None:
@@ -183,6 +180,8 @@ def get_product(address: str, head: str) -> tuple[str, dict]:
 
 
 """
+# Use this to test the scraper without crawling all the pages from main
+
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0'
 }
